@@ -1,4 +1,7 @@
-<script setup></script>
+<script setup>
+import { useEmailStore } from '@/stores/emailStore'
+const emailStore = useEmailStore()
+</script>
 
 <template>
   <div class="flex w-full flex-row items-center gap-30 py-2">
@@ -34,6 +37,7 @@
           </div>
 
           <input
+            v-model="emailStore.emailSearch"
             type="text"
             placeholder="Search mail"
             class="rounded-3xl bg-[#e9eef6] py-3.5 pl-16 placeholder:text-[#6e6e6f] focus:rounded-3xl focus:bg-white focus:shadow-sm focus:outline-none md:w-95 lg:w-180"

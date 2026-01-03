@@ -1,18 +1,18 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { useEmailStore } from '@/stores/emailStore'
+import { onMounted } from 'vue'
 
-const emails = ref([])
+const emailStore = useEmailStore()
 
-onMounted(async () => {
-  const res = await fetch('http://localhost:3000/messages')
-  emails.value = await res.json()
+onMounted(() => {
+  emailStore.fetchEmails()
 })
 </script>
 
 <template>
   <div>
     <div
-      v-for="email in emails"
+      v-for="email in emailStore.emails"
       :key="email.id"
       class="flex cursor-pointer flex-row items-center border-y border-[#eceff1] py-2 pr-4 pl-2 hover:border hover:border-[#E1E3E1] hover:shadow-sm"
     >

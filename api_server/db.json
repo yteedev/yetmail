@@ -1,7 +1,7 @@
 {
   "messages": [
     {
-      "id": 2,
+      "id": "2",
       "sender": "Dribble",
       "title": "The futute isn't automated",
       "message_sneak": "Five traits every leader needs in the AI era + the visual trends shaping 2026",
@@ -10,7 +10,7 @@
       "is_read": false
     },
     {
-      "id": 3,
+      "id": "3",
       "sender": "Olajide Kolawole",
       "title": "Updated Title",
       "message_sneak": "New sneak peek",
@@ -19,7 +19,7 @@
       "is_read": false
     },
     {
-      "id": 4,
+      "id": "4",
       "sender": "Arik Air",
       "title": "FLIGHT_FLOWN",
       "message_sneak": "Latest millionaire in town",
@@ -28,7 +28,7 @@
       "is_read": false
     },
     {
-      "id": 5,
+      "id": "5",
       "sender": "pdfFiller",
       "title": "End-of-year deals? Handled",
       "message_sneak": "Close more deals without paper hassles",
@@ -37,12 +37,21 @@
       "is_read": false
     },
     {
-      "id": 6,
+      "id": "6",
       "sender": "GitHub",
       "title": "New Pull Request",
       "message_sneak": "Someone reviewed your code",
       "message": "Your pull request has been approved!",
       "time": "9/12/2025",
+      "is_read": false
+    },
+    {
+      "id": 7,
+      "sender": "Slack",
+      "title": "You've been mentioned",
+      "message_sneak": "Sarah mentioned you in #general",
+      "message": "Hey, can you review the new design mockups I shared?",
+      "time": "1/1/2026",
       "is_read": false
     }
   ]

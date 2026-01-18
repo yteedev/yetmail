@@ -1,0 +1,54 @@
+<script setup>
+import { useEmailStore } from '@/stores/emailStore'
+const emailStore = useEmailStore()
+</script>
+
+<template>
+  <div>
+    <div class="flex w-full flex-row items-center justify-between">
+      <!-- SEARCH BAR -->
+      <div>
+        <div class="relative flex flex-row items-center gap-2">
+          <div
+            class="absolute left-4 cursor-pointer rounded-full p-2 transition-colors hover:bg-[#dce1e9]"
+          >
+            <img src="/icons/search-icon.png" alt="Filter" class="size-6" />
+          </div>
+
+          <input
+            v-model="emailStore.emailSearch"
+            type="text"
+            placeholder="Search mail"
+            class="rounded-3xl bg-[#e9eef6] py-3.5 pl-16 placeholder:text-[#6e6e6f] focus:rounded-3xl focus:bg-white focus:shadow-sm focus:outline-none md:w-95 lg:w-180"
+          />
+
+          <div
+            class="absolute right-4 cursor-pointer rounded-full p-2 transition-colors hover:bg-[#dce1e9]"
+          >
+            <img src="/icons/icons8-tune-24.png" alt="Filter" class="size-6" />
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="mr-2 flex flex-row gap-2">
+          <div
+            class="shrink-0 cursor-pointer rounded-full p-2 transition-colors hover:bg-[#e3e5e7]"
+          >
+            <img src="/icons/icons8-help-96.png" alt="" class="size-6" />
+          </div>
+          <div
+            class="shrink-0 cursor-pointer rounded-full p-2 transition-colors hover:bg-[#e3e5e7]"
+          >
+            <img src="/icons/icons8-settings-96.png" alt="" class="size-6" />
+          </div>
+          <div
+            class="shrink-0 cursor-pointer rounded-full p-2 transition-colors hover:bg-[#e3e5e7]"
+          >
+            <img src="/icons/icons8-apps-96.png" alt="" class="size-6" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
